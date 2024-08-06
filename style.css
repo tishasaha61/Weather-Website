@@ -1,0 +1,143 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #2e335a;
+}
+
+/* Navbar styles */
+#navbar {
+    box-shadow: 0px 4px 30px 0;
+    border: 0 20% 30% 0;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#image {
+    width: 20rem;
+}
+
+#head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heading {
+    color: white;
+    font-size: 3rem; /* Adjust font size */
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#about {
+    color: antiquewhite;
+    font-weight: 500;
+    font-size: 2rem; /* Adjust font size */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Search box styles */
+#searchbox {
+    width: 90%; /* Adjust width */
+    max-width: 70rem; /* Set max-width */
+    height: 10rem;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2rem 0; /* Add margin */
+}
+
+#search-box {
+    height: 6rem;
+    width: 70%; /* Adjust width */
+    max-width: 50rem; /* Set max-width */
+    border: 2px solid blur;
+    outline: none;
+    background-color: transparent;
+    border-radius: 10px;
+    font-size: 2rem; /* Adjust font size */
+    font-weight: 100;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+#btn {
+    height: 5rem;
+    width: 15rem;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(74, 57, 127, 0.7);
+    font-size: 2rem; /* Adjust font size */
+    color: white;
+}
+
+/* Weather cards styles */
+#weather-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2rem 0; /* Add margin */
+}
+
+.weather-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 2rem; /* Add margin */
+    background-color: #f9f9f9;
+    width: 45%; /* Adjust width */
+    max-width: 300px; /* Set max-width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem; /* Adjust font size */
+}
+
+.weather-image {
+    width: 70%; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 1rem; /* Add margin */
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    #searchbox {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #search-box {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #btn {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 1rem;
+    }
+
+    .weather-card {
+        width: 90%;
+        max-width: 100%;
+    }
+}
